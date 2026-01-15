@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="css/doan.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="topbar">
+          <a class="brand" href="index.html">
+            <img
+              class="brand__logo"
+              src="images/logo.jpg"
+              alt="Logo Đồ Ăn Vặt ĐHV"
+            />
+            <span>Đồ Ăn Vặt ĐHV</span>
+          </a>
+
+          <nav class="nav">
+            <a data-nav href="index.html">Trang chủ</a>
+            <a href="category.html?cat=ALL">Danh mục</a>
+            <a data-nav href="about.html">Giới thiệu</a>
+            <a data-nav href="contact.html">Liên hệ</a>
+            <a data-nav href="product-detail.html">Sản phẩm</a>
+          </nav>
+
+          <div class="actions">
+            <a class="icon-btn" href="cart.html" aria-label="Giỏ hàng">
+              🛒
+              <span class="badge hidden" id="cartCount">0</span>
+            </a>
+            <a class="btn btn--ghost" id="authLink" href="login.html"
+              >Đăng nhập</a
+            >
+            <button class="menu-btn" data-menu-btn aria-label="Menu">☰</button>
+          </div>
+        </div>
+
+        <div class="mobile-nav" data-mobile-nav>
+          <a data-nav href="index.html">Trang chủ</a>
+          <a data-nav href="about.html">Giới thiệu</a>
+          <a data-nav href="contact.html">Liên hệ</a>
+          <a data-nav href="product-detail.html">Sản phẩm</a>
+          <a data-nav href="cart.html">Giỏ hàng</a>
+          <a data-nav href="login.html">Đăng nhập</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-wrapper" style="grid-template-columns: 1fr">
+      <section class="content">
+        <h1 class="page-title">Đăng Nhập Tài Khoản</h1>
+        <p class="muted" style="margin-bottom: 20px">
+          Nếu bạn đã là thành viên, bạn có thể đăng nhập bằng địa chỉ email và
+          mật khẩu của mình.
+        </p>
+
+        <form class="form-simple" id="loginForm">
+          <div class="form-row">
+            <label>Địa chỉ email</label>
+            <input
+              name="email"
+              type="email"
+              required
+              placeholder="Nhập email"
+            />
+          </div>
+          <div class="form-row">
+            <label>Mật khẩu</label>
+            <input
+              name="pass"
+              type="password"
+              required
+              placeholder="Nhập mật khẩu"
+            />
+          </div>
+          <div
+            class="form-row"
+            style="display: flex; align-items: center; gap: 8px"
+          >
+            <input type="checkbox" id="remember" style="width: auto" />
+            <label for="remember" style="margin: 0">Nhớ tôi nhé</label>
+          </div>
+          <div class="form-actions">
+            <button class="btn-primary" type="submit">Đăng ký tài khoản</button>
+          </div>
+          <div style="text-align: center; margin-top: 14px">
+            <span class="muted">Không có tài khoản? </span>
+            <a href="register.html" style="color: #ff8a00; font-weight: 700"
+              >Đăng ký tại đây</a
+            >
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/doan.js"></script>
+  </body>
+</html>

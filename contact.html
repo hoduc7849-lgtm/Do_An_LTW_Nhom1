@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="css/doan.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="topbar">
+          <a class="brand" href="index.html">
+            <img
+              class="brand__logo"
+              src="images/logo.jpg"
+              alt="Logo Đồ Ăn Vặt ĐHV"
+            />
+            <span>Đồ Ăn Vặt ĐHV</span>
+          </a>
+
+          <nav class="nav">
+            <a data-nav href="index.html">Trang chủ</a>
+            <a href="category.html?cat=ALL">Danh mục</a>
+            <a data-nav href="about.html">Giới thiệu</a>
+            <a data-nav href="contact.html">Liên hệ</a>
+            <a data-nav href="product-detail.html">Sản phẩm</a>
+          </nav>
+
+          <div class="actions">
+            <a class="icon-btn" href="cart.html" aria-label="Giỏ hàng">
+              🛒
+              <span class="badge hidden" id="cartCount">0</span>
+            </a>
+            <a class="btn btn--ghost" id="authLink" href="login.html"
+              >Đăng nhập</a
+            >
+            <button class="menu-btn" data-menu-btn aria-label="Menu">☰</button>
+          </div>
+        </div>
+
+        <div class="mobile-nav" data-mobile-nav>
+          <a data-nav href="index.html">Trang chủ</a>
+          <a data-nav href="about.html">Giới thiệu</a>
+          <a data-nav href="contact.html">Liên hệ</a>
+          <a data-nav href="product-detail.html">Sản phẩm</a>
+          <a data-nav href="cart.html">Giỏ hàng</a>
+          <a data-nav href="login.html">Đăng nhập</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-wrapper" style="grid-template-columns: 1fr">
+      <section class="content">
+        <h1 class="page-title">Liên hệ</h1>
+
+        <div class="grid-products" style="margin-bottom: 14px">
+          <article class="card">
+            <div class="card__body">
+              <h3 style="margin: 0 0 6px">Thông tin</h3>
+              <div class="muted" style="line-height: 1.8">
+                <div>
+                  <b>Địa chỉ:</b> 27 Đoàn Nhữ Hài, Nguyễn Thái Học, Lê Lợi, TP.
+                  Vinh, Nghệ An
+                </div>
+                <div><b>Điện thoại:</b> 0346 132 620</div>
+                <div><b>Email:</b> hoduc7849@gmail.com</div>
+                <div><b>Giờ làm việc:</b> 08:00 - 22:00 (T2-CN)</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body">
+              <h3 style="margin: 0 0 6px">Hỗ trợ nhanh</h3>
+              <ul
+                class="muted"
+                style="margin: 0; padding-left: 18px; line-height: 1.7"
+              >
+                <li>Vấn đề đặt hàng/giỏ hàng</li>
+                <li>Góp ý giao diện - chức năng</li>
+                <li>Yêu cầu thêm danh mục/sản phẩm</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <form
+          class="form"
+          onsubmit="event.preventDefault(); alert('Đã gửi liên hệ!');"
+        >
+          <div class="form-row">
+            <label>Họ tên</label>
+            <input required placeholder="Nhập họ tên" />
+          </div>
+          <div class="form-row">
+            <label>Email</label>
+            <input type="email" required placeholder="Nhập email" />
+          </div>
+          <div class="form-row">
+            <label>Tiêu đề</label>
+            <input
+              required
+              placeholder="VD: Góp ý giao diện / Lỗi giỏ hàng..."
+            />
+          </div>
+          <div class="form-row">
+            <label>Nội dung</label>
+            <textarea required placeholder="Bạn cần hỗ trợ gì?"></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn-primary" type="submit">Gửi</button>
+          </div>
+        </form>
+
+        <div style="margin-top: 14px" class="card">
+          <div class="card__body">
+            <h3 style="margin: 0 0 10px">Bản đồ (tuỳ chọn)</h3>
+            <p class="muted" style="margin: 0 0 10px">
+              Dưới đây chỉ là địa chỉ của GG Map được lấy trên Internet, chỉ
+              mang tính chất minh hoạ cho sản phẩm Đồ Án
+            </p>
+            <div
+              style="
+                border-radius: 14px;
+                overflow: hidden;
+                border: 1px solid #f0f0f0;
+              "
+            >
+              <iframe
+                title="map"
+                style="width: 100%; height: 280px; border: 0"
+                src="https://www.google.com/maps?q=TP.%20Vinh%20Ngh%E1%BB%87%20An&output=embed"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/doan.js"></script>
+  </body>
+</html>

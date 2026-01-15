@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giới thiệu</title>
+    <link rel="stylesheet" href="css/doan.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="topbar">
+          <a class="brand" href="index.html">
+            <img
+              class="brand__logo"
+              src="images/logo.jpg"
+              alt="Logo Đồ Ăn Vặt ĐHV"
+            />
+            <span>Đồ Ăn Vặt ĐHV</span>
+          </a>
+
+          <nav class="nav">
+            <a data-nav href="index.html">Trang chủ</a>
+            <a href="category.html?cat=ALL">Danh mục</a>
+            <a data-nav href="about.html">Giới thiệu</a>
+            <a data-nav href="contact.html">Liên hệ</a>
+            <a data-nav href="product-detail.html">Sản phẩm</a>
+          </nav>
+
+          <div class="actions">
+            <a class="icon-btn" href="cart.html" aria-label="Giỏ hàng">
+              🛒
+              <span class="badge hidden" id="cartCount">0</span>
+            </a>
+            <a class="btn btn--ghost" id="authLink" href="login.html"
+              >Đăng nhập</a
+            >
+            <button class="menu-btn" data-menu-btn aria-label="Menu">☰</button>
+          </div>
+        </div>
+
+        <div class="mobile-nav" data-mobile-nav>
+          <a data-nav href="index.html">Trang chủ</a>
+          <a data-nav href="about.html">Giới thiệu</a>
+          <a data-nav href="contact.html">Liên hệ</a>
+          <a data-nav href="product-detail.html">Sản phẩm</a>
+          <a data-nav href="cart.html">Giỏ hàng</a>
+          <a data-nav href="login.html">Đăng nhập</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-wrapper" style="grid-template-columns: 1fr">
+      <section class="content">
+        <h1 class="page-title">Giới thiệu</h1>
+
+        <div class="content-head">
+          <p class="muted" style="margin: 0; max-width: 900px">
+            Đồ Ăn Vặt ĐHV là website đồ án nhóm của tụi mình (Nhóm 1 - LTW) mô
+            phỏng một cửa hàng tiện lợi online mini: có đầy đủ các chức năng cơ
+            bản mà 1 trang web bán hàng cần có. Và cì là sản phẩm đầu tay và còn
+            nhiều thiếu sót mong quý thầy cô và các bạn cùng xem qua và cho ý
+            kiến ạ. Xin chân thành cảm ơn
+          </p>
+        </div>
+
+        <div class="grid-products" style="margin-top: 14px">
+          <article class="card">
+            <div class="card__body">
+              <h3 style="margin: 0 0 6px">Sứ mệnh</h3>
+              <p class="muted" style="margin: 0">
+                Mang trải nghiệm mua sắm “nhanh - gọn - rõ ràng” cho đồ án học
+                phần.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__body">
+              <h3 style="margin: 0 0 6px">Điểm nổi bật</h3>
+              <ul
+                class="muted"
+                style="margin: 0; padding-left: 18px; line-height: 1.7"
+              >
+                <li>Lọc theo danh mục, sắp xếp theo giá/tên</li>
+                <li>Giỏ hàng lưu localStorage, cập nhật số lượng</li>
+                <li>Trang chi tiết + gợi ý sản phẩm liên quan</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__body">
+              <h3 style="margin: 0 0 6px">Cam kết</h3>
+              <p class="muted" style="margin: 0">
+                Sẽ mang đến cho quý thầy cô và các bạn 1 giao diện website có
+                đầy đủ chức năng cơ bản, trải nghiệm mượt mà và dễ sử dụng nhất
+                có thể
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div style="margin-top: 18px" class="card">
+          <div class="card__body">
+            <h3 style="margin: 0 0 10px">Cấu trúc trang (đầy đủ)</h3>
+            <div
+              class="muted"
+              style="
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+                line-height: 1.7;
+              "
+            >
+              <div>• Trang chủ: danh mục + sản phẩm + lọc</div>
+              <div>• Sản phẩm: chi tiết sản phẩm</div>
+              <div>• Giỏ hàng: tăng/giảm/xóa</div>
+              <div>• Thanh toán: form thông tin + tổng tiền</div>
+              <div>• Đăng nhập / Đăng ký</div>
+              <div>• Liên hệ / Giới thiệu</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/doan.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tài khoản cá nhân</title>
+    <link rel="stylesheet" href="css/doan.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="topbar">
+          <a class="brand" href="index.html">
+            <img
+              class="brand__logo"
+              src="images/logo.jpg"
+              alt="Logo Đồ Ăn Vặt ĐHV"
+            />
+            <span>Đồ Ăn Vặt ĐHV</span>
+          </a>
+
+          <nav class="nav">
+            <a data-nav href="index.html">Trang chủ</a>
+            <a data-nav href="about.html">Giới thiệu</a>
+            <a data-nav href="contact.html">Liên hệ</a>
+            <a data-nav href="product-detail.html">Sản phẩm</a>
+          </nav>
+
+          <div class="actions">
+            <a class="icon-btn" href="cart.html" aria-label="Giỏ hàng">
+              🛒
+              <span class="badge hidden" id="cartCount">0</span>
+            </a>
+            <a class="btn btn--ghost" href="account.html" id="authLink"
+              >Tài khoản</a
+            >
+            <button class="menu-btn" data-menu-btn aria-label="Menu">☰</button>
+          </div>
+        </div>
+
+        <div class="mobile-nav" data-mobile-nav>
+          <a data-nav href="index.html">Trang chủ</a>
+          <a data-nav href="about.html">Giới thiệu</a>
+          <a data-nav href="contact.html">Liên hệ</a>
+          <a data-nav href="product-detail.html">Sản phẩm</a>
+          <a data-nav href="cart.html">Giỏ hàng</a>
+          <a data-nav href="account.html">Tài khoản</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-wrapper" style="grid-template-columns: 1fr">
+      <section class="content">
+        <div id="accountPage">
+          <h1>Tài khoản cá nhân</h1>
+          <p>Chào mừng bạn đến với trang tài khoản cá nhân của chúng tôi!</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h2 class="footer-title">THÔNG TIN LIÊN HỆ</h2>
+      <ul class="footer-info">
+        <li>
+          Địa chỉ: 27 Đoàn Như Hải, Nguyễn Thái Học, Lê Lợi, TP. Vinh, Nghệ An
+        </li>
+        <li>Điện thoại: 0346 132 620</li>
+        <li>Email: hoduc7849@gmail.com</li>
+      </ul>
+    </footer>
+
+    <script src="js/doan.js"></script>
+  </body>
+</html>
