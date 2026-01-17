@@ -131,6 +131,7 @@ function getQuery(name) {
   const url = new URL(window.location.href);
   return url.searchParams.get(name);
 }
+// Giỏ hàngg
 function getCart() {
   try {
     return JSON.parse(localStorage.getItem(CART_KEY)) || [];
@@ -183,6 +184,7 @@ function updateCartCount() {
     }
   }
 }
+// người dùng, lưu tài khoản
 function getUsers() {
   try {
     return JSON.parse(localStorage.getItem(USERS_KEY)) || [];
@@ -204,7 +206,7 @@ function setCurrentUser(u) {
   if (!u) localStorage.removeItem(CURRENT_KEY);
   else localStorage.setItem(CURRENT_KEY, JSON.stringify(u));
 }
-
+// hiển thị liên kết đăng nhập/tài khoản
 function renderAuthLink() {
   const links = $$("[id='authLink']");
   const user = getCurrentUser();
@@ -219,6 +221,7 @@ function renderAuthLink() {
     }
   });
 }
+// quản lý đơn hàng
 function getOrders() {
   try {
     return JSON.parse(localStorage.getItem(ORDERS_KEY)) || [];
@@ -226,17 +229,16 @@ function getOrders() {
     return [];
   }
 }
-
 function saveOrders(orders) {
   localStorage.setItem(ORDERS_KEY, JSON.stringify(orders));
 }
-
 function getUserOrders() {
   const user = getCurrentUser();
   if (!user) return [];
   const allOrders = getOrders();
   return allOrders.filter(o => o.userId === user.id);
 }
+// menu danh mục
 function initMenuToggle() {
   document.querySelectorAll('.category-header.has-sub').forEach(function (btn) {
     btn.addEventListener('click', function () {
@@ -245,6 +247,7 @@ function initMenuToggle() {
     });
   });
 }
+// lọc vàs sắp xếp sản phẩm trang chủ
 const state = {
   q: "",
   category: "ALL",
@@ -276,6 +279,7 @@ function applyFilters(list) {
 
   return out;
 }
+// hiển thị sản phẩm trang chủ
 function renderProductsHome() {
   const grid = document.getElementById("productGrid");
   const pagi = document.getElementById("pagination");
@@ -328,6 +332,7 @@ function renderProductsHome() {
     });
   });
 }
+// khởi tạo điều khiển lọc, sắp xếp trang chủ
 function initHomeControls() {
   const searchInput = $("#searchInput");
   const searchBtn = $("#searchBtn");
@@ -404,6 +409,7 @@ function initHomeControls() {
     });
   }
 }
+// hiển thị giỏ hàng trang giỏ hàng
 function renderCartPage() {
   const box = document.getElementById("cartPage");
   if (!box) return;

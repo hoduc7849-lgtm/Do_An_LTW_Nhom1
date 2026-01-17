@@ -31,7 +31,7 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
-
+/* Cấu hình chung và màu sắc */
 :root {
   --primary: lab(62.26% 37.07 66.09);
   --primary-dark: #5568d3;
@@ -80,7 +80,7 @@ button {
   font-size: 12px;
   font-weight: 700;
 }
-
+/* Header và điều hướng */
 .header {
   position: sticky;
   top: 0;
@@ -274,7 +274,7 @@ button {
   color: #fff;
   transform: translateY(-2px);
 }
-
+/* layout chính  */
 .main-wrapper {
   max-width: 1200px;
   margin: 30px auto;
@@ -283,6 +283,7 @@ button {
   grid-template-columns: 280px 1fr;
   gap: 30px;
 }
+/* Thanh bên danh mục */
 .sidebar {
   background: var(--bg);
   border-radius: var(--radius);
@@ -292,7 +293,7 @@ button {
   position: sticky;
   top: 100px;
 }
-
+/* Tiêu đề danh mục */
 .sidebar-title {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: #fff;
@@ -302,15 +303,15 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-
+/* Danh sách danh mục */
 .category-list {
   list-style: none;
 }
-
+/* Mục danh mục */
 .category-item {
   border-bottom: 1px solid var(--border);
 }
-
+/* Xóa viền dưới cùng của mục danh mục cuối cùng */
 .category-item:last-child {
   border-bottom: none;
 }
